@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing modules...
+      - npm install -g yarn
+      - yarn install
+  build:
+    commands:
+      - echo Running tests...
+      - yarn lint:js
+      - yarn test
+      - yarn build --env production
+      - zip -qrFS pocket-bib.zip ./dist
+  post_build:
+    commands:
+      - echo Build completed on `date`!
+      - echo Generating processed SAM template...
+      # - aws cloudformation package --template-file template.yaml --s3-bucket <s3 build artifact output> --output-template-file template-output.yaml
+artifacts:
+  type: zip
+  files: 
+      # - template.yaml
+      # - template-output.yaml
