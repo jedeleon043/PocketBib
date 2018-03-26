@@ -14,13 +14,14 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone git@github.com:jedeleon043/PocketBib.git` this repository
 * `cd pocket-bib`
-* `npm install`
+* `npm install -g yarn`
+* `yarn install`
 
 ## Running / Development
 
-* `ember serve`
+* `yarn start`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
@@ -30,22 +31,22 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Running Tests
 
-* `ember test`
-* `ember test --server`
+* `yarn test`
+* `yarn test --server`
 
 ### Linting
 
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
+* `yarn run lint:js`
+* `yarn run lint:js -- --fix`
 
 ### Building
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+* `yarn build` (development)
+* Production builds will be managed by a CICD pipeline, NOT on a developer machine. (production)
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+For local testing, please refer to Running / Development. Deploy to staging environment will be managed by a CICD pipeline.
 
 ## Further Reading / Useful Links
 
