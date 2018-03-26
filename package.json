@@ -16,9 +16,7 @@
     "start": "ember serve",
     "test": "ember test"
   },
-  "pre-commit": [
-    
-  ],
+  "pre-commit": [],
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
